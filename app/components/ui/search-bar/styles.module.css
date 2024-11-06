@@ -2,8 +2,10 @@
     min-width: 100%;
     min-height: 48px;
     background-color: #fefefe;
-    border: 0px solid #0000;
+    border: 1px solid #0003;
     border-radius: 0.2em;
+
+    color: var(--fore);
 
     display: grid;
     grid-template-columns: 1fr auto;
@@ -35,7 +37,6 @@
         border: none;
         background-color: inherit;
 
-        color: #121212;
         padding: 0 0.3em;
     }
 }

@@ -10,11 +10,10 @@
     font-size: 18px;
     font-family: monospace;
     font-weight: bolder;
-    color: #fefefe;
 
     min-height: 39px;
 
-    background-color: #39f;
+    background-color: var(--secondary-bg);
 }
 
 .logo_wrapper {

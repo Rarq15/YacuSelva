@@ -1,27 +1,41 @@
 "use client"
 
-import { useUser } from "@auth0/nextjs-auth0/client";
-import Link from "next/link";
+import React from 'react';
+import ProductList from './components/ui/product-list';
+import styles from './page.module.css';
+import Footer from './components/ui/footer';
 
-export default function Home() {
-  const {isLoading, user, error} = useUser()
+export default function Page() {
+  const products = [
+    {
+      id: 1,
+      title: 'Agua de Mesa Yacu Selva',
+      imageUrl: '/yacu-selva.png',
+      price: 5,
+      description: 'Reposición garrafa de agua 20L',
+    },
+    {
+      id: 2,
+      title: 'Agua de Mesa Yacu Selva',
+      imageUrl: '/yacu-selva.png',
+      price: 30,
+      description: 'Garrafa de agua 20L',
+    },
+  ];
 
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>{error.message}</div>;
+  const handleAddToCart = (productId: number) => {
+    console.log(`Producto agregado al carrito: ID ${productId}`);
+  };
 
   return (
-    user? (
-      <div>
-        <img src={user.picture ?? "ruta-usuario-sin-perfil"} alt={user.name ?? ""}/>
-        <h2>{user.name}</h2>
-        <p>{user.email}</p>
-        <Link href={"/api/auth/logout"}>Log Out</Link>
-      </div>
-    ) : (
-        <div>
-          <h1>Página por defecto</h1>
-          <Link href={"/api/auth/login"}>Log In</Link>
-        </div>
-    )
+    <>
+      <main className={styles.main}>
+        <h1>Nuestros Productos:</h1>
+        <br />
+        <ProductList products={products} onAddToCart={handleAddToCart} />
+      </main>
+      <br />
+      <Footer />
+    </>
   );
 }

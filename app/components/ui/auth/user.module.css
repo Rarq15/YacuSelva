@@ -16,9 +16,15 @@
 }
 
 .desplegable {
+  --border-width: 1px;
+  --border-radius: 0.3em;
+
   position: absolute;
 
   background-color: #fefefe;
+  border: var(--border-width) solid #1212125e;
+  border-radius: var(--border-radius);
+
   color: #121212;
   padding: 0.5em;
 
