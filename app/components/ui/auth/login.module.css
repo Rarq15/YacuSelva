@@ -1,21 +1,18 @@
-.button {
-    background-color: #efefef;
-    color: #121212;
+.login {
+    background-color: #fefefe;
+    color: #1212125f;
 
     width: min-content;
+    display: grid;
+    place-content: center;
 
-    border: none;
-    border-radius: 0.2em;
-    padding: 0.2em 0.3em;
+    border-radius: 100%;
+    border: 2px solid #9f9f9f5e;
+    height: 40px;
+    width: 40px;
 
     & a {
         color: inherit;
-
-        font-size: 1em;
-        font-weight: 600;
-        
-        user-select: none;
-        cursor: pointer;
     }
 
     & a:visited {

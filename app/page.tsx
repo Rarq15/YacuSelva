@@ -10,14 +10,14 @@ export default function Page() {
     {
       id: 1,
       title: 'Agua de Mesa Yacu Selva',
-      imageUrl: '/yacu-selva.png',
+      imageUrl: '/yacu-selva.webp',
       price: 5,
       description: 'Reposición garrafa de agua 20L',
     },
     {
       id: 2,
       title: 'Agua de Mesa Yacu Selva',
-      imageUrl: '/yacu-selva.png',
+      imageUrl: '/yacu-selva.webp',
       price: 30,
       description: 'Garrafa de agua 20L',
     },
