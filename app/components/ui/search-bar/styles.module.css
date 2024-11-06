@@ -5,7 +5,7 @@
     border: 1px solid #0003;
     border-radius: 0.2em;
 
-    color: var(--fore);
+    color: #121212;
 
     display: grid;
     grid-template-columns: 1fr auto;
@@ -38,5 +38,6 @@
         background-color: inherit;
 
         padding: 0 0.3em;
+
     }
 }
