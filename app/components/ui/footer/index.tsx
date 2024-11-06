@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
         <ul className={styles.socialList}>
           <li className={styles.socialIcon}>
             <Link
-              href="https://www.facebook.com/profile.php?id=61560303873101&mibextid=JRoKGi"
+              href="https://m.facebook.com/profile.php?id=61560303873101&mibextid=JRoKGi"
               aria-label="Facebook"
             >
               <FacebookIcon />
